@@ -19,7 +19,10 @@
         });
 
         socket.emit('mensaje', { nombre: "Rogwi" });
-        
+        socket.on('mensaje', (payload)=>{
+            console.log(payload);
+        })
+
 
     </script>
     
